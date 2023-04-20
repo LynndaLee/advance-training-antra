@@ -10,4 +10,4 @@
 
 // root.render(React.createElement(HelloMessage,null))
 
-console.log("hello babel");
+console.log("hello babel")
