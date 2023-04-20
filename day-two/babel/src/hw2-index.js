@@ -1,13 +1,20 @@
-// // console.log(React)
-// // console.log(ReactDOM)
-// class HelloMessage extends React.Component {
-//     render() {
-//         return React.createElement("div", null, "Hello World");
-//     }
-// }
+// console.log(React)
+// console.log(ReactDOM)
 
-// const root = ReactDOM.createRoot(document.getElementById('app'))
+class HelloMessage extends React.Component {
+    render() {
+      return (
+        <div>
+          <h1>Hello World</h1>
+        </div>
+      );
+    }
+  }
 
-// root.render(React.createElement(HelloMessage,null))
 
-console.log("hello babel")
+
+ReactDOM.render(<HelloMessage />, document.getElementById("app"));
+
+//new updated version did not work 
+//   const root = ReactDOM.createRoot(document.getElementById("app"));
+//   root.render(<HelloMessage />);
