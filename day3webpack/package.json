@@ -5,7 +5,7 @@
   "main": "hw2-index.js",
   "scripts": {
     "test": "echo test babel",
-    "build": "babel src -d lib -w",
+    "build:babel": "babel src -d lib",
     "build:webpack" : "webpack"
   },
   "keywords": [],
