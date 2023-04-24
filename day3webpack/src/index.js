@@ -1,41 +1,11 @@
-// console.log(React)
-// console.log(ReactDOM)
-// class Counter extends React.Component {
-//     state = {
-//         count:0,
-//     };
-    
-//     render() { 
-//         return (
-//             <div>
-//                 <h2>{this.state.count}</h2>
-//                 <button onClick = {() => {
+import React from "react";
+import {createRoot} from "react-dom/client";
+import App from "./App.js";
+import "./index.css";
 
-//                     this.setState({count: this.state.count + 1})
-//                 }}>Click</button>
-//             </div> );
-
-// }}
-
-import Counter from "./components/Counter.js"; 
-
-
-class HelloMessage extends React.Component {
-    render() {
-      return (
-        <div>
-          <h1>Hello World</h1>
-          <Counter /> 
-        </div>
-
-      );
-    }
-  }
-
-
-
-
-ReactDOM.render(<HelloMessage />, document.getElementById("app"));
+// ReactDOM.render(<HelloMessage />, document.getElementById("app"));
+const root = createRoot(document.getElementById("app")); 
+root.render(<App />);
 
 //new updated version did not work 
 //   const root = ReactDOM.createRoot(document.getElementById("app"));
